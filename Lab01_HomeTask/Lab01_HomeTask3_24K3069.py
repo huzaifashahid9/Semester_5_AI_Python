@@ -41,6 +41,9 @@ def search_item(inventory):
 
 
 def print_inventory(inventory):
+    if not inventory:
+        print("Inventory is empty!")
+        return
     print("\nInventory:")
     for item in inventory:
         print(item , ":" , inventory[item])

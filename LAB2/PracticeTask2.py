@@ -6,6 +6,7 @@ class Staff:
         self.department = department
 
     def display_info(self):
+            print()
             print(f"--- Staff {self.name} Profie")
             print(f"Staff ID: {self.staff_id}")
             print(f"Department: {self.department}")
@@ -25,6 +26,7 @@ class Teacher(Staff):
             print(f" Salary : {self.salary}")
             print(f" Courses: {', '.join(self.courses)}")
             print("_" * 20)
+            print()
 
 class AdministrativeStaff(Staff):
     def __init__(self, name, staff_id , department, role ,workingHour):
@@ -56,6 +58,7 @@ class ResearchAssistants(Staff):
         print(f" Research Topic: {self.research_topic}")
         print(f" Stipend: {self.stipend}")
         print("_" * 20)
+        print()
 
 teacher1 = Teacher(
     "Ali",
